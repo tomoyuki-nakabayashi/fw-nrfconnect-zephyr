@@ -1,0 +1,6 @@
+common:
+  harness: net
+  tags: net
+sample:
+  description: Test core network features
+  name: ping
