@@ -15,7 +15,7 @@ $(LIB_DIR)/$(RUST_TARGET): $(RUST_FILES)
 	cargo objcopy -- --weaken $(LIB_DIR)/$(RUST_TARGET)
 
 $(LIB_DIR)/$(C_BINDINGS): $(RUST_FILES)
-	cbindgen -l c -o $(LIB_DIR)/$(C_BINDINGS)
+	cbindgen src/lib.rs -l c -o $(LIB_DIR)/$(C_BINDINGS)
 
 clean:
 	rm -rf $(LIB_DIR)
