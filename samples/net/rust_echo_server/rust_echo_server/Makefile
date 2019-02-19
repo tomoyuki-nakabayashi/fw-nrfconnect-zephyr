@@ -18,5 +18,5 @@ $(LIB_DIR)/$(C_BINDINGS): $(RUST_FILES)
 	cbindgen src/lib.rs -l c -o $(LIB_DIR)/$(C_BINDINGS)
 
 clean:
-	rm -rf $(LIB_DIR)
+	rm -rf $(LIB_DIR)/$(RUST_TARGET)
 	cargo clean

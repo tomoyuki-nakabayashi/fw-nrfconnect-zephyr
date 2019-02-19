@@ -126,6 +126,8 @@ static inline int init_app(void)
 
 void main(void)
 {
+	printk("\n");
+	printk("Hello from C\n");
 	rust_main();
 
 	init_app();
